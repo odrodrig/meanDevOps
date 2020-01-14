@@ -16,7 +16,7 @@ const appRoutes = [
   { path: '', component: HomeComponent},
   { path: 'catalog', component: CatalogComponent},
   { path: 'itemDetails', component: ItemDetailsComponent}
-]
+];
 
 @NgModule({
   declarations: [

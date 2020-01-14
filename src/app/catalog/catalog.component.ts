@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Product } from '../models/product';
 import { PRODUCTS } from '../../assets/inventory';
-import { ProductService } from "../product.service";
+import { ProductService } from '../product.service';
 
 @Component({
   selector: 'app-catalog',
@@ -20,7 +20,7 @@ export class CatalogComponent implements OnInit {
   }
 
   addToCart(product: Product) {
-    let msg = product.name + " was added to the cart.";
+    const msg = product.name + ' was added to the cart.';
     console.log(msg);
     return msg;
   }
@@ -33,7 +33,7 @@ export class CatalogComponent implements OnInit {
   constructor(private productService: ProductService) { }
 
   ngOnInit() {
-    //this.getProducts();
+    // this.getProducts();
   }
 
 }
