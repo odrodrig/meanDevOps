@@ -24,7 +24,7 @@ echo "Starting linting with tslint"
 ng lint
 
 echo "Starting unit tests with Karma + Jasmine"
-ng test --no-watch --no-progress
+ng test --no-watch --no-progress --no-sandbox
 
 echo "Starting end-to-end testing with Protractor"
 ng e2e --protractor-config=e2e/protractor-ci.conf.js
