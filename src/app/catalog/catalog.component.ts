@@ -19,6 +19,12 @@ export class CatalogComponent implements OnInit {
     this.selectedProduct = product;
   }
 
+  addToCart(product: Product) {
+    let msg = product.name + " was added to the cart.";
+    console.log(msg);
+    return msg;
+  }
+
   // getProducts(): void {
   //   this.productService.getProducts()
   //       .subscribe(this.products => this.products = this.products);

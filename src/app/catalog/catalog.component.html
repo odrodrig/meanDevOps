@@ -37,9 +37,9 @@
             <p><div><span>price: </span>${{selectedProduct.price}}</div>
 
         </div>
-        <div class="modal-footer">
+        <div class="modal-footer"> 
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary" data-dismiss="modal">Add To Cart</button>
+          <button type="button" class="btn btn-primary" data-dismiss="modal" (click)="addToCart(selectedProduct)">Add To Cart</button>
         </div>
       </div>
     </div>
