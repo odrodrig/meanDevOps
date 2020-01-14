@@ -14,6 +14,8 @@ npm config delete prefix \
   
 # Installs app dependencies, and completes a production build
 npm install -g @angular/cli
+npm i -D puppeteer karma-chrome-launcher
+
 npm install
 
 echo "Starting linting with tslint"
