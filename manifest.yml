@@ -1,6 +1,6 @@
 ---
 applications:
 - name: odr-mean-demo
-  buildpacks: staticfile_buildpack
-  path: ./dist/myApp
+  buildpack: staticfile_buildpack
+  path: ./dist/supply-store
   command: "$HOME/boot.sh"
