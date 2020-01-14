@@ -12,9 +12,9 @@ npm config delete prefix \
   && node -v \
   && npm -v
   
-sudo apt-get install libxss1 libappindicator1 libindicator7 -y
+sudo apt-get -qq install libxss1 libappindicator1 libindicator7 -y
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-sudo apt install ./google-chrome*.deb -y
+sudo apt -qq install ./google-chrome*.deb -y
 
 # Installs app dependencies, and completes a production build
 npm install -g @angular/cli
