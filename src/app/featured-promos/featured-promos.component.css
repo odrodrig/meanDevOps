@@ -1,3 +1,7 @@
 #featuredPromoText {
     background-color: #e9ecef
 }
+
+.carousel-inner {
+    max-width:  320px;
+}
