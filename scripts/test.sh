@@ -1,4 +1,4 @@
-#!bin/bash
+#!/bin/bash
 export NVM_DIR=/home/pipeline/nvm
 export NODE_VERSION=12.14.0
 export NVM_VERSION=0.29.0
