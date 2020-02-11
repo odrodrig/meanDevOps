@@ -28,12 +28,11 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 ## Scripts
 
-This repo contains 3 scripts in the `/scripts` directory to help build, test, and deploy the project. These scripts can be called in the CI/CD pipeline to deploy the application. 
+This repo contains 3 scripts in the `/scripts` directory to help build, test, and deploy the project. These scripts can be called in the CI/CD pipeline to deploy the application.
 
 - build.sh: This script pulls in the NPM dependencies and then compiles the project using Webpack. The output is contained in the `/dist` directory.
 - test.sh: This script does a combination of linting, unit testing, and e2e testing using tslint, karma + Jasmine, and Protractor.
 - deploy.sh: This script just deploys to cloud foundry. It is meant to be consumed by the IBM Continuous Delivery pipelines service on IBM Cloud.
-
 
 ## Further help
 
