@@ -21,6 +21,7 @@ sudo apt -qq install ./google-chrome*.deb -y > /dev/null
 npm install -g @angular/cli
 npm install
 ibmcloud plugin install -f doi
+ibmcloud login --apikey $API_KEY --no-region
 
 echo "Starting linting with tslint"
 ng lint

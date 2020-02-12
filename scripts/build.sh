@@ -14,6 +14,7 @@ npm config delete prefix \
   && npm -v
   
 ibmcloud plugin install -f doi
+ibmcloud login --apikey $API_KEY --no-region
 
 # Installs app dependencies, and completes a production build
 npm install -g @angular/cli
