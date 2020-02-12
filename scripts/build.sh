@@ -22,4 +22,4 @@ npm install
 
 ng build --prod
 
-ibmcloud doi publishbuildrecord --logicalappname="odr-mean-demo" --buildnumber="$MY_BUILD_NUMBER" --branch="$GIT_BRANCH" --repositoryurl="$GIT_URL" --commitid="$GIT_COMMIT" --status=pass
+ibmcloud doi publishbuildrecord --logicalappname="odr-mean-demo" --buildnumber="$BUILD_NUMBER" --branch="$GIT_BRANCH" --repositoryurl="$GIT_URL" --commitid="$GIT_COMMIT" --status=pass
