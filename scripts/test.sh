@@ -11,7 +11,8 @@ npm config delete prefix \
   && nvm use default \
   && node -v \
   && npm -v
-  
+
+sudo apt-get update
 sudo apt-get -qq install libxss1 libappindicator1 libindicator7 -y > /dev/null
 wget -q https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo apt -qq install ./google-chrome*.deb -y > /dev/null
