@@ -32,4 +32,4 @@ ng test --no-watch --no-progress --browsers=ChromeHeadlessCI --code-coverage
 echo "Starting end-to-end testing with Protractor"
 ng e2e --protractor-config=e2e/protractor-ci.conf.js
 
-ibmcloud doi publishtestrecord --filelocation='/coverage/supply-store/' --type='code' --logicalappname="odr-mean-demo" --buildnumber="$BUILD_NUMBER"
+ibmcloud doi publishtestrecord --filelocation='/coverage/supply-store/coverage-final.json' --type='code' --logicalappname="odr-mean-demo" --buildnumber="$BUILD_NUMBER"
