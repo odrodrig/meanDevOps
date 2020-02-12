@@ -20,6 +20,7 @@ sudo apt -qq install ./google-chrome*.deb -y > /dev/null
 # Installs app dependencies, and completes a production build
 npm install -g @angular/cli
 npm install
+ibmcloud plugin install -f doi
 
 echo "Starting linting with tslint"
 ng lint
@@ -29,3 +30,5 @@ ng test --no-watch --no-progress --browsers=ChromeHeadlessCI --code-coverage
 
 echo "Starting end-to-end testing with Protractor"
 ng e2e --protractor-config=e2e/protractor-ci.conf.js
+
+ibmcloud doi publishtestrecord --filelocation='/coverage/supply-store/' --type='code' --logicalappname="odr-mean-demo" --buildnumber="$MY_BUILD_NUMBER"

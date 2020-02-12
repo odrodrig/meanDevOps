@@ -13,8 +13,12 @@ npm config delete prefix \
   && node -v \
   && npm -v
   
+ibmcloud plugin install -f doi
+
 # Installs app dependencies, and completes a production build
 npm install -g @angular/cli
 npm install
 
 ng build --prod
+
+ibmcloud doi publishbuildrecord --logicalappname="odr-mean-demo" --buildnumber="$MY_BUILD_NUMBER" --branch="$GIT_BRANCH" --repositoryurl="$GIT_URL" --commitid="$GIT_COMMIT" --status=pass
